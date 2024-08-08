@@ -1,4 +1,8 @@
-const SearchIcon = () => {
+import { FC } from 'react';
+import { IIcon } from '../../../utils/common-interface';
+
+const SearchIcon: FC<IIcon> = (props) => {
+  const { className } = props;
   return (
     <svg
       width="20"
@@ -6,6 +10,7 @@ const SearchIcon = () => {
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clip-path="url(#clip0_2207_9348)">
         <path
