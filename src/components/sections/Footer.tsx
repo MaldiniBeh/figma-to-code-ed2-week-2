@@ -10,11 +10,11 @@ const Footer = () => {
           <h1 className="text-white">Logo</h1>
           <span className="text-gray-400 text-md">
             Subscribe to our newsletter for upcoming products and the best
-            discount for all
+            discount for all items
           </span>
           <div className="flex space-x-2">
             <Input
-              className="bg-transparent border rounded-full py-2 blur-none ring-0"
+              className="bg-transparent border rounded-full py-2 blur-none ring-0 w-4/6"
               autoFocus={false}
             />
             <Button

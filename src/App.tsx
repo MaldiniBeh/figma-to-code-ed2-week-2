@@ -1,18 +1,19 @@
-import Footer from './components/sections/Footer';
-import Header from './components/sections/Header';
-import { HearderData } from './utils/data';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import Payement from './pages/Payment';
+import Product from './pages/Product';
 
 const App = () => {
   return (
-    <div className="bg-white flex flex-col">
-      <div className="bg-black text-center p-4 text-white">
-        Sign up and get 20% off for all new arrivals collections
-      </div>
-      <div className="px-32">
-        <Header headerData={HearderData}></Header>
-      </div>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<Cart />} />
+      <Route path="/contact" element={<Checkout />} />
+      <Route path="/contact" element={<Payement />} />
+      <Route path="/contact" element={<Product />} />
+    </Routes>
   );
 };
 
