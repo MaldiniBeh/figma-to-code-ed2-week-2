@@ -7,4 +7,10 @@ const FooterData = {
   Categories: ['Man', 'Woman', 'Kids', 'Gift', 'New arrival'],
   'Our Social Media': ['Instagram', 'Facebook', 'Youtube', 'X'],
 };
-export { HearderData, FooterData };
+const CollectionsHome = [
+  'All 132',
+  'Accessories 13',
+  'Feacture 67',
+  'Unisex 52',
+];
+export { HearderData, FooterData, CollectionsHome };

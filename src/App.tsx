@@ -2,17 +2,17 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import Payement from './pages/Payment';
+import Payment from './pages/Payment';
 import Product from './pages/Product';
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<Cart />} />
-      <Route path="/contact" element={<Checkout />} />
-      <Route path="/contact" element={<Payement />} />
-      <Route path="/contact" element={<Product />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/checkout" element={<Checkout />} />
+      <Route path="/payment" element={<Payment />} />
+      <Route path="/product" element={<Product />} />
     </Routes>
   );
 };

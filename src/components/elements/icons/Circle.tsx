@@ -7,7 +7,7 @@ const CircleIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="10" cy="10" r="9.25" stroke="#1D1D1D" stroke-width="1.5" />
+      <circle cx="10" cy="10" r="9.25" stroke="#1D1D1D" strokeWidth="1.5" />
     </svg>
   );
 };

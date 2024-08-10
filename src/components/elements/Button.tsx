@@ -1,16 +1,18 @@
-import { FC, ReactElement, ForwardedRef, forwardRef } from 'react';
+import { FC, ForwardedRef, forwardRef, ReactNode } from 'react';
 
 interface IButton {
-  content: string | ReactElement;
+  children: ReactNode;
   handleFunction?: () => void;
 }
+
 type ButtonProps = IButton & React.ButtonHTMLAttributes<HTMLButtonElement>;
+
 const Button: FC<ButtonProps> = forwardRef(
   (props, ref: ForwardedRef<HTMLButtonElement>) => {
-    const { content, handleFunction, ...rest } = props;
+    const { children, handleFunction, ...rest } = props;
     return (
       <button {...rest} onClick={handleFunction} ref={ref}>
-        {content}
+        {children}
       </button>
     );
   },

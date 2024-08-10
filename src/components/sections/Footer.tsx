@@ -18,7 +18,7 @@ const Footer = () => {
               autoFocus={false}
             />
             <Button
-              content="Subscribe"
+              children="Subscribe"
               className=" border rounded-full px-7 bg-white font-semibold text-black"
             />
           </div>

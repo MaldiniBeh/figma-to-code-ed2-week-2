@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .bg-custom {
+        background-image: url(/src/assets/images/jordan.png); 
+        object-fit: contain;
+        object-position: center;
+        height: 60vh;
+    }
+    .center-custom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg-air {
+        background-image: url(/src/assets/images/air.png); 
+        object-fit: contain;
+        object-position: center;
+        height: 30vh;
+    }
+}
