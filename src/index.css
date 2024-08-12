@@ -5,7 +5,7 @@
 @layer components{
     .bg-custom {
         background-image: url(/src/assets/images/jordan.png); 
-        object-fit: contain;
+        object-fit: cover;
         object-position: center;
         height: 60vh;
     }
@@ -13,11 +13,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .bg-air {
-        background-image: url(/src/assets/images/air.png); 
-        object-fit: contain;
-        object-position: center;
-        height: 30vh;
     }
 }

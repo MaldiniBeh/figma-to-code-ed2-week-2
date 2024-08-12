@@ -13,4 +13,54 @@ const CollectionsHome = [
   'Feacture 67',
   'Unisex 52',
 ];
-export { HearderData, FooterData, CollectionsHome };
+const SummerData = [
+  {
+    title: 'Summer shirt',
+    price: 99,
+    img: '',
+    altText: 'air-img1',
+    displayButtomBtn: false,
+    displayTopBtn: true,
+  },
+  {
+    title: 'Summer shirt',
+    price: 99,
+    img: '',
+    altText: 'air-img2',
+    displayButtomBtn: false,
+    displayTopBtn: true,
+  },
+  {
+    title: 'Summer shirt',
+    price: 99,
+    img: '',
+    altText: 'air-img1',
+    displayButtomBtn: false,
+    displayTopBtn: false,
+  },
+  {
+    title: 'Summer shirt',
+    price: 99,
+    img: '',
+    altText: 'air-img3',
+    displayButtomBtn: false,
+    displayTopBtn: false,
+  },
+  {
+    title: 'Summer shirt',
+    price: 99,
+    img: '',
+    altText: 'air-img4',
+    displayButtomBtn: true,
+    displayTopBtn: true,
+  },
+  {
+    title: 'Summer shirt',
+    price: 99,
+    img: '',
+    altText: 'air-img1',
+    displayButtomBtn: false,
+    displayTopBtn: false,
+  },
+];
+export { HearderData, FooterData, CollectionsHome, SummerData };
