@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Archivo';
+    src: url('/src/assets/fonts/archivo/Archivo-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/archivo/Archivo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+ 
+  @font-face {
+    font-family: 'Chillax';
+    src: url('/src/assets/fonts/chillax/Chillax-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/chillax/Chillax-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,14 +27,41 @@
     }
     .center-custom {
         display: flex;
-        justify-content: center;
+        justify-content: center;    
         align-items: center;
     }
     .bg-footer {
-        background-image: url(/src/assets/images/shacket.png); 
+        background-image: url(/src/assets/images/george.png); 
         object-fit: cover;
         object-position: center;
         height: 52vh;
         width: 70%;
     }
+    .text-outline-white {
+      color: black;
+      text-shadow: 
+        2px 0 white,
+        -2px 0 white,
+        0 2px white,
+        0 -2px white;
+      font-weight: bold;
+      }
+      .text-outline-black {
+        color: white;
+        text-shadow: 
+          2px 0 black,
+          -2px 0 black,
+          0 2px black,
+          0 -2px black;
+        font-weight: bold;
+        }
+        .text-classic {
+          color: white;
+          text-shadow: 
+            2px 0 white,
+            -2px 0 white,
+            0 2px white,
+            0 -2px white;
+          font-weight: bold;
+        }
 }

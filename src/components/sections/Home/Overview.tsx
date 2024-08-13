@@ -4,7 +4,7 @@ import ArrowIcon from '../../elements/icons/Arrow';
 const OverviewHome = () => {
   return (
     <>
-      <div className="text-center center-custom flex-col mx-32 bg-custom bg-cover bg-center rounded-3xl space-y-6">
+      <div className="text-center font-archivo center-custom flex-col mx-32 bg-custom bg-cover bg-center rounded-3xl space-y-6">
         <div className="flex items-center space-x-2">
           <span className="w-12 h-[1px] bg-gray-500"></span>
           <span className="text-gray-100 text-sm">
@@ -12,7 +12,7 @@ const OverviewHome = () => {
           </span>
           <span className="w-12 h-[1px] bg-gray-500"></span>
         </div>
-        <span className="uppercase text-white font-bold text-4xl max-w-2xl">
+        <span className="uppercase text-white font-extrabold text-5xl max-w-5xl">
           Discoverthe last fashion trends here
         </span>
         <span className="text-white max-w-xl">

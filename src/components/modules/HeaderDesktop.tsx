@@ -5,8 +5,7 @@ import Logo from '../elements/Logo';
 const HeaderDesktop: FC<IHeaderResponsive> = (props) => {
   const { right, left } = props;
   return (
-    <nav className="flex justify-between items-center" id="menu">
-      {/* <Link to="/">Home</Link> */}
+    <nav className="flex justify-between items-center font-archivo" id="menu">
       <div className="flex space-x-6">
         {left.map((items, index) => (
           <a key={index} href="#" className="">

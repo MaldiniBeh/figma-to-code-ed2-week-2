@@ -1,19 +1,20 @@
-import { SummerData } from '../../../utils/data';
 import SummerCard from '../../modules/SummerCard';
-import airImage from '../../../assets/images/air.png';
+import responseGql from '../../../utils/appolo-client';
+import { IProducts } from '../../../utils/common-interface';
 
 const Summer = () => {
+  const result = responseGql.data.products as IProducts;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      {SummerData.map((item) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-72">
+      {result.edges.map((item) => (
         <SummerCard
-          key={item.altText}
-          altText={item.altText}
-          displayButtomBtn={item.displayButtomBtn}
-          displayTopBtn={item.displayTopBtn}
-          img={airImage}
-          price={item.price}
-          title={item.title}
+          key={item.node.id}
+          altText={item.node.description}
+          // displayButtomBtn={item.displayButtomBtn}
+          // displayTopBtn={item.displayTopBtn}
+          img={item.node.featuredImage.url}
+          price={item.node.variants.edges[0].node.price.amount}
+          title={item.node.title}
         />
       ))}
     </div>

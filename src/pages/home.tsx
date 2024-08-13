@@ -21,11 +21,11 @@ const Home = () => {
         </div>
       </div>
       {/* summer section */}
-      <div className="center-custom flex flex-col space-y-8">
+      <div className="center-custom flex flex-col space-y-16">
         <Summer />
         <Button
           children="View More"
-          className="px-6 py-2 text-sm text-center text-black rounded-full border border-black"
+          className="px-6 py-2 text-sm text-center font-bold text-black rounded-full border border-black"
         />
         <Collection />
       </div>

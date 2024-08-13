@@ -8,7 +8,7 @@ const client = new ApolloClient({
 const responseGql = await client.query({
   query: gql`
     {
-      products(first: 20) {
+      products(first: 6) {
         edges {
           node {
             id
@@ -18,7 +18,7 @@ const responseGql = await client.query({
               id
               url
             }
-            variants(first: 3) {
+            variants(first: 1) {
               edges {
                 node {
                   price {

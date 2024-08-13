@@ -6,7 +6,7 @@ interface Ilogo {
 const Logo: FC<Ilogo> = ({ type }) => {
   return (
     <div
-      className={`uppercase text-2xl ${type === 'white' ? 'text-white' : 'text-black'}`}
+      className={`uppercase text-4xl font-chillax ${type === 'white' ? 'text-outline-white' : ' text-outline-black'}`}
     >
       Ballamas
     </div>

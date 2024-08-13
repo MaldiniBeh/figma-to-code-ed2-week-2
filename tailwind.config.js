@@ -2,7 +2,12 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        chillax: ['Chillax', 'sans-serif'],
+        archivo: ['Archivo', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

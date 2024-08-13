@@ -5,7 +5,7 @@ import Logo from '../elements/Logo';
 
 const Footer = () => {
   return (
-    <footer className="bg-black px-24">
+    <footer className="mt-12 bg-black px-24">
       <div className="my-16 flex justify-between">
         <div className="flex flex-col space-y-8 max-w-lg">
           <Logo type="white" />
@@ -15,7 +15,8 @@ const Footer = () => {
           </span>
           <div className="flex space-x-2">
             <Input
-              className="bg-transparent border rounded-full py-2 blur-none ring-0 w-4/6"
+              className="bg-transparent text-white px-2 border rounded-full py-2 blur-none ring-0 w-4/6"
+              value="Your email"
               autoFocus={false}
             />
             <Button
@@ -39,6 +40,9 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      <span className="text-gray-600 text text-sm mb-16 center-custom">
+        © BALLAMAS {new Date().getFullYear()} by waris
+      </span>
     </footer>
   );
 };

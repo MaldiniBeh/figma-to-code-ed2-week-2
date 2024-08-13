@@ -12,7 +12,7 @@ interface IHeader {
 const Header: FC<IHeader> = (props) => {
   const { headerData } = props;
   const accountData = (
-    <div className="flex space-x-1">
+    <div className="flex font-archivo space-x-1">
       <UserIcon className="mt-1" />
       <span>{'Account'}</span>
     </div>
