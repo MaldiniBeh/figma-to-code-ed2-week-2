@@ -1,13 +1,14 @@
 import { FooterData } from '../../utils/data';
 import Button from '../elements/Button';
 import Input from '../elements/Input';
+import Logo from '../elements/Logo';
 
 const Footer = () => {
   return (
     <footer className="bg-black px-24">
       <div className="my-16 flex justify-between">
         <div className="flex flex-col space-y-8 max-w-lg">
-          <h1 className="text-white">Logo</h1>
+          <Logo type="white" />
           <span className="text-gray-400 text-md">
             Subscribe to our newsletter for upcoming products and the best
             discount for all items

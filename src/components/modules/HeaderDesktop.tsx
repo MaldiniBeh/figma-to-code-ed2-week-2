@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { IHeaderResponsive } from '../../utils/common-interface';
+import Logo from '../elements/Logo';
 
 const HeaderDesktop: FC<IHeaderResponsive> = (props) => {
   const { right, left } = props;
@@ -13,7 +14,7 @@ const HeaderDesktop: FC<IHeaderResponsive> = (props) => {
           </a>
         ))}
       </div>
-      <span>BALLAMAS</span>
+      <Logo type="black" />
       <div className="flex space-x-6">
         {right.map((items, index) => (
           <a href="#" key={index} className="">
