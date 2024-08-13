@@ -50,10 +50,10 @@ const SummerCard: FC<ICard> = (props) => {
         )} */}
 
         <div className="text-xs space-x-1 center-custom font-bold uppercase absolute bottom-2 left-0 right-0 flex justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <Button className="text-black py-2 px-3 rounded-full bg-white">
+          <Button className="text-black py-2 px-2 rounded-full bg-white">
             <div className="flex space-x-1">
               <CartIcon className="h-4" />
-              <span className="text-black uppercase"> Add to cart </span>
+              <span className="text-black uppercase text-xs">Add to cart</span>
             </div>
           </Button>
           <Button
