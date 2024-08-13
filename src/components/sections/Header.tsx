@@ -24,8 +24,8 @@ const Header: FC<IHeader> = (props) => {
     <div>
       <header className=" border-b text-black py-6">
         <HeaderDesktop left={headerData.left} right={newDataRight} />
+        <HearderMobile />
       </header>
-      <HearderMobile />
     </div>
   );
 };

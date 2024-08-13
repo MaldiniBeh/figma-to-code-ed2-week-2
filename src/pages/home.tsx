@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <OverviewHome />
-      <div className="my-8 px-32 center-custom">
+      <div className="my-8 px-8 center-custom md:px-2 lg:px-32">
         {/* btn Section */}
         <div className="space-x-2">
           {CollectionsHome.map((item, index) => (

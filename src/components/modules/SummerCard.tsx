@@ -15,13 +15,16 @@ const SummerCard: FC<ICard> = (props) => {
   const { img, altText, title, price } = props;
   return (
     <div className="flex font-archivo flex-col space-y-4">
-      <div className="relative group w-64 h-80">
+      <div className="relative group w-full h-80">
         <img
           src={img}
           className="w-full h-full object-cover object-center rounded-3xl"
           alt={altText}
         />
-        <div className="absolute inset-0 bg-gray-900 opacity-0 hover:opacity-60 rounded-3xl transition-opacity duration-1000"></div>
+        <div
+          className="absolute inset-0 bg-gray-900 opacity-0
+         hover:opacity-60 rounded-3xl transition-opacity duration-1000"
+        ></div>
 
         <Button
           children="Get off 20%"
@@ -49,7 +52,11 @@ const SummerCard: FC<ICard> = (props) => {
           </div>
         )} */}
 
-        <div className="text-xs space-x-1 center-custom font-bold uppercase absolute bottom-2 left-0 right-0 flex justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div
+          className="text-xs space-x-1 center-custom font-bold uppercase 
+        absolute bottom-2 left-0 right-0 flex justify-between px-4 opacity-0 
+        group-hover:opacity-100 transition-opacity duration-300"
+        >
           <Button className="text-black py-2 px-2 rounded-full bg-white">
             <div className="flex space-x-1">
               <CartIcon className="h-4" />

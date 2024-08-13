@@ -6,7 +6,7 @@ import Logo from '../elements/Logo';
 const Footer = () => {
   return (
     <footer className="mt-12 bg-black px-24">
-      <div className="my-16 flex justify-between">
+      <div className="my-16 flex flex-col space-y-8 lg:space-y-0 lg:justify-between">
         <div className="flex flex-col space-y-8 max-w-lg">
           <Logo type="white" />
           <span className="text-gray-400 text-md">

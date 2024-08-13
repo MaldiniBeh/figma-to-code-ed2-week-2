@@ -5,7 +5,7 @@ import { IProducts } from '../../../utils/common-interface';
 const Summer = () => {
   const result = responseGql.data.products as IProducts;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-72">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-4 mx-8 md:mx-20 lg:mx-72">
       {result.edges.map((item) => (
         <SummerCard
           key={item.node.id}
