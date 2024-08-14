@@ -10,36 +10,40 @@ const CollectionComponent = () => {
         </h1>
         <span className="text-md text-gray-500">
           Our latest collection, where classic and contemporary styles converges
-          in perfect harmony
+          in perfect harmony.
         </span>
       </div>
 
       <div className="flex space-x-4">
-        <div className="relative group w-64 h-80 md:h-full md:w-2/3">
+        <div className="relative group w-full h-32 md:h-full lg:h-80 lg:w-64">
           <img
             src={jordanImage}
-            className="w-full h-80 object-cover object-center rounded-3xl md:h-[42vh]"
+            className="w-full h-32 md:h-[42vh] lg:h-80 lg:w-64 object-cover object-center rounded-3xl"
             alt="jordan"
           />
           <div
             className="absolute inset-0 bg-gray-600 opacity-20 rounded-3xl
         "
           ></div>
-
-          <Button
-            className="text-xs space-x-1 font-extrabold uppercase absolute bottom-2 left-12 right-0 
-          flex justify-between px-4 bg-white py-3 rounded-full md:mx-10 md:left-22 md:right-16"
-          >
-            <div className="flex space-x-1">
-              <span className="text-black uppercase md:px-4"> Learn More </span>
-              <ArrowIcon className="h-4" />
-            </div>
-          </Button>
+          <div className="center-custom">
+            <Button
+              className="text-xs space-x-1 font-extrabold uppercase absolute bottom-4 
+          flex px-4 bg-white py-3 
+          rounded-full"
+            >
+              <div className="flex space-x-1">
+                <span className="text-black uppercase md:px-4 lg:px-0">
+                  Learn More
+                </span>
+                <ArrowIcon className="h-4" />
+              </div>
+            </Button>
+          </div>
         </div>
 
         <div
           className="flex-col relative center-custom bg-footer bg-cover 
-        bg-center rounded-3xl space-y-2 md:h-[42vh]"
+        bg-center rounded-3xl space-y-2 w-full md:h-[42vh] lg:h-[50vh] lg:w-4/5"
         >
           <div
             className="absolute inset-0 text-white bg-gray-600 opacity-20 rounded-3xl

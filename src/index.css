@@ -23,7 +23,6 @@
         background-image: url(/src/assets/images/jordan.png); 
         object-fit: cover;
         object-position: center;
-        height: 60vh;
     }
     .center-custom {
         display: flex;
@@ -34,8 +33,6 @@
         background-image: url(/src/assets/images/george.png); 
         object-fit: cover;
         object-position: center;
-        height: 52vh;
-        width: 70%;
     }
     .text-outline-white {
       color: black;
