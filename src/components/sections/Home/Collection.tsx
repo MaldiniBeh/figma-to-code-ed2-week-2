@@ -8,17 +8,19 @@ const CollectionComponent = () => {
         <h1 className="text-black text-4xl font-bold uppercase">
           Our collection
         </h1>
-        <span className="text-md text-gray-500">
-          Our latest collection, where classic and contemporary styles converges
-          in perfect harmony.
-        </span>
+        <div className="px-6 md:px-0">
+          <span className="text-md text-center text-gray-500 md:px-0">
+            Our latest collection, where classic and contemporary styles
+            converges in perfect harmony.
+          </span>
+        </div>
       </div>
 
-      <div className="flex space-x-4">
-        <div className="relative group w-full h-32 md:h-full lg:h-80 lg:w-64">
+      <div className="flex flex-col space-y-4 mx-4 md:mx-0 md:flex-row md:space-y-0 md:space-x-4">
+        <div className="relative group h-[50vh]  md:w-full md:h-full lg:h-80 lg:w-64">
           <img
             src={jordanImage}
-            className="w-full h-32 md:h-[42vh] lg:h-80 lg:w-64 object-cover object-center rounded-3xl"
+            className="w-full h-[50vh] md:h-[42vh] lg:h-80 lg:w-64 object-cover object-center rounded-3xl"
             alt="jordan"
           />
           <div
@@ -43,13 +45,13 @@ const CollectionComponent = () => {
 
         <div
           className="flex-col relative center-custom bg-footer bg-cover 
-        bg-center rounded-3xl space-y-2 w-full md:h-[42vh] lg:h-[50vh] lg:w-4/5"
+        bg-center rounded-3xl h-[60vh] space-y-2 w-full md:h-[42vh] lg:h-[50vh] lg:w-4/5"
         >
           <div
             className="absolute inset-0 text-white bg-gray-600 opacity-20 rounded-3xl
         "
           ></div>
-          <span className="text-classic font-chillax text-5xl uppercase">
+          <span className="text-classic font-chillax font-extrabold text-5xl uppercase">
             Classic Men
           </span>
           <span className="text-white">

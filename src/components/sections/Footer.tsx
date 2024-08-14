@@ -5,9 +5,9 @@ import Logo from '../elements/Logo';
 
 const Footer = () => {
   return (
-    <footer className="mt-12 bg-black px-24">
-      <div className="my-16 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between">
-        <div className="flex flex-col space-y-8 max-w-lg">
+    <footer className="mt-8 bg-black px-8 md:mt-12 md:px-24">
+      <div className="my-8 flex flex-col space-y-8 md:my-16 lg:flex-row lg:space-y-0 lg:justify-between">
+        <div className="flex flex-col space-y-4 md:space-y-8 max-w-lg">
           <Logo type="white" />
           <span className="text-gray-400 text-md">
             Subscribe to our newsletter for upcoming products and the best
@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="flex space-x-2">
             <Input
               className="bg-transparent text-white px-2 border rounded-full py-2 blur-none ring-0 w-4/6"
-              value="Your email"
+              defaultValue="Your email"
               autoFocus={false}
             />
             <Button
@@ -25,7 +25,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4">
           {Object.entries(FooterData).map(([item, key]) => (
             <div key={item}>
               <h3 className="text-md font-bold text-white ">{item}</h3>
