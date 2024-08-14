@@ -8,26 +8,22 @@ interface IHeaderResponsive {
   right: Array<string | ReactElement>;
 }
 interface IProducts {
-  edges: Array<{
-    node: {
-      id: string;
-      title: string;
-      description: string;
-      featuredImage: {
-        id: string;
-        url: string;
+  id: string;
+  title: string;
+  description: string;
+  featuredImage: {
+    id: string;
+    url: string;
+  };
+  variants: {
+    edges: Array<{
+      node: {
+        price: {
+          amount: number;
+          currencyCode: string;
+        };
       };
-      variants: {
-        edges: Array<{
-          node: {
-            price: {
-              amount: number;
-              currencyCode: string;
-            };
-          };
-        }>;
-      };
-    };
-  }>;
+    }>;
+  };
 }
 export type { IIcon, IHeaderResponsive, IProducts };
